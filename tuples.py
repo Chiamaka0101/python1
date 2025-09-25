@@ -1,6 +1,8 @@
 payment_method = ("visa","master","verve", "bitcoin", "gift card")
 
 print(len(payment_method)) #number of items in the tuple
+print(payment_method[0])
+
 
 for pm in range(len(payment_method)): #to loop thru
 

@@ -15,18 +15,18 @@ cars[1:3] = "Amaka", "Jen"  #this changes the name of 1 and 2
 
 
 
-def highest_discovery(nums):
+# def highest_discovery(nums):
 
-  max_value = max(nums)
-  max_index = nums.index(max_value)
-  for num in nums:
-    if num > max_value:
-      max_value = num
-  return max_value, max_index
+#   max_value = max(nums)
+#   max_index = nums.index(max_value)
+#   for num in nums:
+#     if num > max_value:
+#       max_value = num
+#   return max_value, max_index
 
 
 
-print(highest_discovery([300, 750, 120, 800, 10, 620]))   #return the index
+# print(highest_discovery([300, 750, 120, 800, 10, 620]))   #return the index
 
 
 
@@ -63,6 +63,18 @@ print(highest_discovery([300, 750, 120, 800, 10, 620]))   #return the index
 
   
   
+
+def high_avg_routes(routes):
+  result = []
+  for route in routes:
+    avg = round(sum(route)) / len(route)
+    if avg >= 100:
+      result.append(avg)
+  return result
+
+data = [[80, 150, 120], [105, 115, 110],[70, 85, 95],[130, 140, 125]]
+    
+print(high_avg_routes(data))
 
 
 
